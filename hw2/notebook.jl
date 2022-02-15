@@ -210,8 +210,8 @@ md"We constrain nodes in the $x$ and $y$ directions by setting their effects on 
 # ╔═╡ 9e8af36f-b232-4830-bdb3-df904598b7a7
 constrain(
 	geometry::Geometry{T,U},
-	xcs=[]::Vector{T},
-	ycs=[]::Vector{T}
+	xcs=Vector{T}()::Vector{T},
+	ycs=Vector{T}()::Vector{T}
 ) where {T, U} =
 	let dofs = dofs(geometry) # transform graph to matrix
 
@@ -596,7 +596,7 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╟─955d1dd4-1e3e-4c3d-a845-26ad335a9cfd
 # ╠═21236c1f-c66c-46ee-80d0-fac24e625716
 # ╠═29708c92-615c-4e8e-a582-cb1e2329ccfe
-# ╟─7b699be4-73a5-4203-92cb-869f8164b692
+# ╠═7b699be4-73a5-4203-92cb-869f8164b692
 # ╠═166c57dd-f02e-4dbc-b074-da6db827e235
 # ╟─15b33dd2-d93b-4fb8-baa0-42e087b87e5b
 # ╠═41f91e06-5261-49a3-b92e-f26220f5f625
